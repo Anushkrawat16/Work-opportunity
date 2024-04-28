@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/6801fb1ab4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide"></a>
+            <header id="logo-header">
+                <img src="logo.jpg" alt="Your Logo">
+            </header>
+
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+
+                <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Job Listings</a>
+                <a href="#team" class="w3-bar-item w3-button">About Japan Culture </a>
+                <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+        style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close
+            ×</a>
+
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Job Listings</a>
+        <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">About Japan Culture </a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container">  </header>
+        <div class="w3-display-left w3-text-white font-weight-bold w3-display-container" id="home" style="padding:48px" >
+            <span class="w3-jumbo w3-hide-small font-weight:bold;">"Work Opportunities in Japan</span><br>
+            <span class="w3-large font-weight: bold margin-left:6px; ">Embarking on a new journey in the Land of the Rising Sun!</span>
+            <p><a href="#about"
+                    class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Search
+                    job in Japan</a></p>
+        </div>
+        <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px ">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+   
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 80px 14px" id="about">
+        <h1 class="w3-center">Job search</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." class="search-input">
+            <div class="filters">
+                <!-- Example filter options -->
+                <select class="filter-select">
+                    <option value="all">JOB LOCATION</option>
+                    <option value="category">Tokyo</option>
+                    <option value="date">Osaka</option>
+                </select>
+            </div>
+            <button class="search-button">Search</button>
+        </div>
+
+        <div class="w3-row-padding w3-center" style="margin-top:100px">
+            <div class="w3-quarter">
+                <i class="fa-regular fa-clock"></i>
+                <p class="w3-large">Full Timee</p>
+
+            </div>
+            <div class="w3-quarter">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <p class="w3-large">Part Time</p>
+
+            </div>
+            <div class="w3-quarter">
+                <i class="fa-regular fa-bookmark"></i>
+                <p class="w3-large">bookmark</p>
+
+            </div>
+            <div class="w3-quarter">
+                <i class="fa-brands fa-cc-visa"></i>
+                <p class="w3-large">Visa Offered</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Team Section -->
+    <div class="w3-container" style="padding: 80px 16px" id="team">
+        <h1 class="w3-center">Japan Culture</h1>
+        <p class="w3-center w3-large">Japan has a fascinating and multifaceted culture; on the one hand it is steeped in
+            the deepest of traditions dating back thousands of years; on the other it is a society in a continual state
+            of rapid flux, with continually shifting fads and fashions and technological development that constantly
+            pushes back the boundaries of the possible. This is part of what makes it such a fascinating country to
+            visit. If you are in search of the extraordinary, our Japan holidays promise to deliver just that.</p>
+        <div class="w3-row-padding " style="margin-top:64px">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="japa_people.jpeg" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Japan people</h3>
+
+                        <p>Japanese people appear at first glance to be one of the most socially and ethnically
+                            homogenous groups in the world.
+
+                            It is reasonable to equate Japan's rapid post-war economic development to the 1990s with
+                            social solidarity and conformism. Despite labour shortages since the 1960s, authorities
+                            resisted officially sanctioning foreign workers until the 1980s, relying on increased
+                            mechanisation and an expanded female workforce instead (1).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="culture.jpeg" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Japanese Culture</h3>
+
+                        <p>Religion in Japan is a wonderful mish-mash of ideas from Shintoism and Buddhism. Unlike in
+                            the West, religion in Japan is rarely preached, nor is it a doctrine. Instead it is a moral
+                            code, a way of living, almost indistinguishable from Japanese social and cultural values.
+
+                            Japanese religion is also a private, family affair. It is separate from the state; there are
+                            no religious prayers or symbols in a school graduation ceremony, for example. Religion is
+                            rarely discussed in every day life and the majority of Japanese do not worship regularly or
+                            claim to be religious.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="food.jpeg" alt="Mike" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Japanese food</h3>
+
+                        <p>When it comes to food, the Japanese are among the most enthusiastic and passionate of any
+                            race. Ask any Japanese person about a recent trip within Japan and the conversation almost
+                            always includes talk of the local food. In fact, for many Japanese travelling outside of
+                            their hometowns, food is often one of the primary motivators for travelling
+                            For this reason many towns and cities in Japan are known first and foremost for their local
+                            speciality, whether it be a type of sweet, fish, noodle, seaweed or tofu etc. Such is the
+                            Japanese passion for food that you can turn on your TV at almost any time of the day or
+                            night and almost undoubtedly catch a show about food.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-card">
+                    <img src="animeee.jpeg" alt="Dan" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Japanese Anime</h3>
+
+                        <p>Once certain manga have proven their worth by popularity, the natural progression is for an
+                            animated TV series to be created, however, manga is not the only source of inspiration for
+                            anime. For example, Pokémon was a worldwide hit as a video game for Nintendo before it was
+                            made into manga and anime series.
+
+                            The obvious differences from manga such as colour, movement and sound bring anime to life,
+                            but there is one additional element which is extremely important: the theme song..</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+            title="Close Modal Image">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+
+            <p class="inline"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Tokyo ,Japan</p>
+            <p class="inline"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+            <p class="inline"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+            <br>
+
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="map.jpg" class="w3-image "
+                style=" height: 50%;width:60%;margin-top:48px; margin-left: 20%;">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+    </footer>
+
+    <script>
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+            } else {
+                mySidebar.style.display = 'block';
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

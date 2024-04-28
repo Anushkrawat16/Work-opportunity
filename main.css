@@ -1,0 +1,89 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("background.avif");
+  min-height: 100%;
+  filter: blur(2px); /* Adjust the blur intensity as needed */
+ 
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+#logo-header {
+  position: fixed;
+  top: 20px; /* Adjust this value to position the logo vertically */
+  left: 20px; /* Adjust this value to position the logo horizontally */
+  z-index: 1000; /* Ensure the logo appears above other elements */
+}
+#logo-header img {
+  width: 200px; /* Set the desired width of the logo */
+  height: auto; /* Let the browser automatically calculate the height to maintain aspect ratio */
+  /* If you want to fix both width and height, you can use the following:
+  height: 100px; /* Set the desired height of the logo */
+  margin-top: -10px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.filters {
+  margin-right: 10px;
+}
+
+.filter-select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.w3-quarter {
+  font-size: 40px;
+}
+.inline {
+  display: inline;
+  margin-right: 10%;
+  margin-left: 5%;
+}
