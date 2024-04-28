@@ -14,7 +14,7 @@
 
 <body>
 
-    <!-- Navbar (sit on top) -->
+    <!-- Navbar  -->
     <div class="w3-top">
         <div class="w3-bar w3-white w3-card" id="myNavbar">
             <a href="#home" class="w3-bar-item w3-button w3-wide"></a>
@@ -29,7 +29,7 @@
                 <a href="#team" class="w3-bar-item w3-button">About Japan Culture </a>
                 <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
             </div>
-            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+            <!-- small screens and replace them with a menu icon -->
 
             <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
                 onclick="w3_open()">
@@ -247,7 +247,7 @@
     </footer>
 
     <script>
-        // Modal Image Gallery
+        /
         function onClick(element) {
             document.getElementById("img01").src = element.src;
             document.getElementById("modal01").style.display = "block";
@@ -256,7 +256,6 @@
         }
 
 
-        // Toggle between showing and hiding the sidebar when clicking the menu icon
         var mySidebar = document.getElementById("mySidebar");
 
         function w3_open() {
@@ -267,7 +266,6 @@
             }
         }
 
-        // Close the sidebar with the close button
         function w3_close() {
             mySidebar.style.display = "none";
         }
