@@ -20,7 +20,7 @@ html {
   background-size: cover;
   background-image: url("background.avif");
   min-height: 100%;
-  filter: blur(2px); /* Adjust the blur intensity as needed */
+  filter: blur(2px); 
  
 }
 
@@ -30,15 +30,14 @@ html {
 
 #logo-header {
   position: fixed;
-  top: 20px; /* Adjust this value to position the logo vertically */
-  left: 20px; /* Adjust this value to position the logo horizontally */
-  z-index: 1000; /* Ensure the logo appears above other elements */
+  top: 20px; 
+  left: 20px; 
+  z-index: 1000; 
 }
 #logo-header img {
-  width: 200px; /* Set the desired width of the logo */
-  height: auto; /* Let the browser automatically calculate the height to maintain aspect ratio */
-  /* If you want to fix both width and height, you can use the following:
-  height: 100px; /* Set the desired height of the logo */
+  width: 200px; 
+  height: auto; 
+  
   margin-top: -10px;
 }
 .search-bar {
@@ -46,7 +45,7 @@ html {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 600px; /* Adjust as needed */
+  max-width: 600px;
   margin: 0 auto;
 }
 
